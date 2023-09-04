@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-03T12:41:39.824Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.69" etag="nz9wRdCEpS9jA3yf9WPr" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-04T12:23:01.222Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="0xqdIO-Iij8QFjAHujux" version="21.7.2" type="github">
   <diagram name="总图" id="Page-1">
-    <mxGraphModel dx="1379" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -666,8 +666,8 @@
         <mxCell id="fi60-aAPyIgHAfr6_0F9-119" value="并转串" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1270" y="308" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fi60-aAPyIgHAfr6_0F9-120" value="前导：&lt;br&gt;1024*13点" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1323" y="356" width="80" height="40" as="geometry" />
+        <mxCell id="fi60-aAPyIgHAfr6_0F9-120" value="前导：&lt;br&gt;1024*13点读写" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1313" y="356" width="100" height="40" as="geometry" />
         </mxCell>
         <UserObject label="&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:11.29px;font-family:SimSun;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;2×(72/136/&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 1px&quot;&gt;&lt;font style=&quot;font-size:11.29px;font-family:SimSun;color:#000000;direction:ltr;letter-spacing:0px;line-height:120%;opacity:1&quot;&gt;264/520)字节&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" tags="背景" id="fi60-aAPyIgHAfr6_0F9-121">
           <mxCell style="verticalAlign=middle;align=center;overflow=width;vsdxID=68;fillColor=none;gradientColor=none;shape=stencil(nZBLDoAgDERP0z3SIyjew0SURgSD+Lu9kMZoXLhwN9O+tukAlrNpJg1SzDH4QW/URgNYgZTkjA4UkwJUgGXng+6DX1zLfmoymdXo17xh5zmRJ6Q42BWCfc2oJfdAr+Yv+AP9Cb7OJ3H/2JG1HNGz/84klThPVCc=);strokeColor=none;points=[];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
@@ -714,17 +714,26 @@
             <mxGeometry x="1145" y="772" width="53" height="22" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="KTb-2xRVzmfc29rBeJ8N-97" value="LUT:90&#xa;FF:75&#xa;BRAM:5&#xa;DSP:9&#xa;FPGA(100M):10.48us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="KTb-2xRVzmfc29rBeJ8N-97" value="LUT:90&#xa;FF:75&#xa;BRAM:5&#xa;DSP:9&#xa;FPGA(100M):10.48us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="495" y="210" width="140" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="KTb-2xRVzmfc29rBeJ8N-98" value="LUT:3939&#xa;FF:4279&#xa;BRAM:12.5&#xa;DSP:1&#xa;FPGA(100M):248.44us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="KTb-2xRVzmfc29rBeJ8N-98" value="LUT:3939&#xa;FF:4279&#xa;BRAM:12.5&#xa;DSP:1&#xa;FPGA(100M):248.44us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="746" y="390" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="KTb-2xRVzmfc29rBeJ8N-99" value="LUT:755&#xa;FF:207&#xa;BRAM:1&#xa;FPGA(100M):87.2us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="KTb-2xRVzmfc29rBeJ8N-99" value="LUT:755&#xa;FF:207&#xa;BRAM:1&#xa;FPGA(100M):87.2us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="507" y="453" width="130" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="KTb-2xRVzmfc29rBeJ8N-100" value="LUT:57&#xa;FF:81&#xa;BRAM:1&#xa;FPGA(100M):10.52us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="KTb-2xRVzmfc29rBeJ8N-100" value="LUT:57&#xa;FF:81&#xa;BRAM:1&#xa;FPGA(100M):10.52us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="335" y="220" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vVA22S3UWNyl42mja5Np-96" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;LUT:336&lt;br style=&quot;&quot;&gt;FF:166&lt;br style=&quot;&quot;&gt;BRAM:3&lt;br style=&quot;&quot;&gt;FPGA(100M):32.24us&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1092" y="236" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vVA22S3UWNyl42mja5Np-98" value="读写，每个符&lt;br&gt;号删去458点" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="329" y="705" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vVA22S3UWNyl42mja5Np-99" value="LUT:1914&lt;br&gt;FF:3014&lt;br&gt;BRAM:2.5&lt;br&gt;DSP:12&lt;br&gt;FPGA(100M):31us" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="463" y="662" width="150" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
