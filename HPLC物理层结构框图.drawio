@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-07T13:59:56.645Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.69" etag="M8q-_GnOZpvv_d1IhmGv" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-10T11:55:37.536Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76" etag="Tu4oX9taUhbT__R7Ph-z" version="21.7.2" type="github">
   <diagram name="总图" id="Page-1">
-    <mxGraphModel dx="1379" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+    <mxGraphModel dx="1379" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -714,8 +714,8 @@
             <mxGeometry x="1145" y="772" width="53" height="22" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="KTb-2xRVzmfc29rBeJ8N-97" value="复杂度分析：&#xa;256次写入交织后的Turbo码&#xa;2*NumCarriers*FC符号数量次读取编码&#xa;（使用频段0为3288）&#xa;资源分析（华为）：&#xa;LUT:90&#xa;FF:75&#xa;BRAM:5&#xa;DSP:9&#xa;FPGA(100M):10.48us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" parent="1" vertex="1">
-          <mxGeometry x="455" y="149" width="230" height="160" as="geometry" />
+        <mxCell id="KTb-2xRVzmfc29rBeJ8N-97" value="复杂度分析：&#xa;256次写入交织后的Turbo码&#xa;2*NumCarrier次读取编码&#xa;（使用频段0为822）&#xa;资源分析（华为）：&#xa;LUT:90&#xa;FF:75&#xa;BRAM:5&#xa;DSP:9&#xa;FPGA(100M):10.48us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" parent="1" vertex="1">
+          <mxGeometry x="485" y="149" width="170" height="160" as="geometry" />
         </mxCell>
         <mxCell id="KTb-2xRVzmfc29rBeJ8N-98" value="复杂度分析：&#xa;CopyNum*2176次写入交织后的Turbo码&#xa;CopyNum*(2176+PadBitsNum)次读取编码&#xa;GroupShiftNum[i]*BitsPerGroup次移位&#xa;资源分析（华为）：&#xa;LUT:3939&#xa;FF:4279&#xa;BRAM:12.5&#xa;DSP:1&#xa;FPGA(100M):248.44us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="800" y="372" width="250" height="160" as="geometry" />
@@ -760,7 +760,7 @@
         <mxCell id="PKwFbaPy-BNmkQgTnEo8-101" value="LUT:11877&#xa;FF:8899&#xa;BRAM:107.5&#xa;FPGA(100M):36us" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="1368" y="675" width="120" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="MXkBJBMoVQ0zneRyonkn-96" value="每2bit一次移&#xa;位两次异或" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="MXkBJBMoVQ0zneRyonkn-96" value="每2bit一次移&#xa;位两次异或" style="text;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="198" y="459" width="90" height="40" as="geometry" />
         </mxCell>
       </root>
