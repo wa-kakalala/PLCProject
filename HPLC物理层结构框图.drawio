@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-12T12:04:04.484Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.69" etag="yUNqUWZmQHlcvlugTiA3" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-12T12:05:32.687Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.69" etag="ediKpFTtGG7K9WMjcHdM" version="21.7.2" type="github">
   <diagram name="总图" id="Page-1">
     <mxGraphModel dx="1212" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
@@ -775,22 +775,22 @@
           <mxGeometry x="120" y="852" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Gfq3Y8K2kFP6dDdqrRhs-101" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;i&gt;双滑动窗口分组检测(判决门限为N)&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;乘法: 2048 * N&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;加法: 2046 *N&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;求模：N&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;除法：N （ 比值作为判决门限)&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="87" y="878" width="139" height="50" as="geometry" />
+          <mxGeometry x="73" y="920" width="139" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Gfq3Y8K2kFP6dDdqrRhs-102" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;b&gt;同步资源消耗(华为)&lt;/b&gt;&lt;br&gt;LUT: 26759&lt;br&gt;FF: 17743&lt;br&gt;FPGA(50M): 40.96us&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="165" y="805" width="140" height="50" as="geometry" />
+          <mxGeometry x="160" y="805" width="140" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Gfq3Y8K2kFP6dDdqrRhs-103" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;符号同步&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="267" y="850" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Gfq3Y8K2kFP6dDdqrRhs-104" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;训练序列+前导符号和本地序列下采8倍&lt;br&gt;(使用符号函数简化)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="226" y="866" width="160" height="40" as="geometry" />
+          <mxGeometry x="224.5" y="886.5" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Gfq3Y8K2kFP6dDdqrRhs-105" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;加法：13*256^2 =&amp;nbsp;851,968&amp;nbsp;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="275.5" y="879.5" width="150" height="30" as="geometry" />
+          <mxGeometry x="242" y="870" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Gfq3Y8K2kFP6dDdqrRhs-107" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 8px;&quot;&gt;使用fifo简化(&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 8px;&quot;&gt;判决门限N)&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;加法:&amp;nbsp; N*128*4&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;移位:&amp;nbsp; N*128*3&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;取模:&amp;nbsp; N*128*2&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;除法:&amp;nbsp; N*128&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="224.5" y="906" width="145" height="45" as="geometry" />
+          <mxGeometry x="224.5" y="933" width="145" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
