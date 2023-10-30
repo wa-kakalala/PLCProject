@@ -2,43 +2,42 @@
 
 POINT_TYPE C_win[WIN_LEN] = {0};
 POINT_TYPE P_win[WIN_LEN] = {0};
+POINT_TYPE C_win_sum      = 0  ;
+POINT_TYPE P_win_sum      = 0  ;
 
 u16        index_count    = 0;
 u16        now_head_index = 0;
-u16        now_tail_index = WIN_LEN-1;
 
-float32    frame_judg = 0;
+float32    frame_judg       = 0;
+
+float32    FRAME_THRESH     = 0.6;
 u16        frame_judg_count = 0;
-u16        frame_judg_threah = FRAME_THRESH;
+u8         FRAME_JUDG_THRS  = 32; 
 
-u8 frame_sync(POINT_TYPE point){
-	int index = 0;
-	u32 Cn = 0;
-	u32 Pn = 0;
-	if( index_count <= WIN_LEN ){
-		C_win[index_count ++ ] = point;
-	}else if(index_count <= WIN_LEN * 2 ){
-		P_win[index_count ++ ] = point;
-	}else{
-		C_win[now_head_index] = point;
-		P_win[now_head_index] = point;
+u8 frame_sync(POINT_TYPE point_new,POINT_TYPE point_old){
+	if( index_count < WIN_LEN ){
+		C_win[now_head_index] = point_new * point_old ;
+		C_win_sum = C_win_sum + point_new * point_old;
+		P_win[now_head_index] = point_old * point_old;
+		P_win_sum = P_win_sum + point_old * point_old;
+		index_count ++;	
+	} else {
+		C_win_sum = C_win_sum - C_win[now_head_index];
+		P_win_sum = P_win_sum - P_win[now_head_index];
 		
-		now_head_index = (now_head_index + 1) % WIN_LEN;	
+		C_win[now_head_index] = point_new * point_old;
+		P_win[now_head_index] = point_old * point_old;
 	}
 	
-	if( index_count < WIN_LEN * 2 ) return 0;
+	now_head_index = (now_head_index + 1) & 0x3ff;
 	
-	u16 now_index = 0; 
-	for(index = 0; index < WIN_LEN;index++){
-		now_index = (now_head_index+now_index) % WIN_LEN;
-		Cn += C_win[now_index] * P_win[now_index];
-		Pn += P_win[now_index] * P_win[now_index]; 
-	}
+	if( index_count < WIN_LEN ) return 0;
 	
-	frame_judg = abs(Cn) / Pn;
+	frame_judg = abs(C_win_sum) / P_win_sum;
+	
 	if( frame_judg > FRAME_THRESH  ) frame_judg_count ++;
 	if( frame_judg < FRAME_THRESH  ) frame_judg_count = 0;
 	
-	if( frame_judg_count > WIN_LEN* 2 ) return 1;
+	if( frame_judg_count >= FRAME_JUDG_THRS ) return 1;
 	else return 0;
 }

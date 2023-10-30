@@ -13,10 +13,10 @@ typedef double         float64;
 #define POINT_TYPE     u16
 #define WIN_LEN        1024
 #define abs(x)         ( x < 0 ? -x : x )
-#define FRAME_THRESH   0.6
 
 
-u8 frame_sync(POINT_TYPE point);
+
+u8 frame_sync(POINT_TYPE point_new,POINT_TYPE point_old);
 u8 symbol_sync(POINT_TYPE point);
 
 #endif 

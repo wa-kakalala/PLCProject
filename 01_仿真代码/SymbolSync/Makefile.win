@@ -6,9 +6,9 @@ CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
 OBJ      = main.o frame_sync.o symbol_sync.o
 LINKOBJ  = main.o frame_sync.o symbol_sync.o
-LIBS     = -L"D:/software/Dev-Cpp/MinGW64/lib" -L"D:/software/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
-INCS     = -I"D:/software/Dev-Cpp/MinGW64/include" -I"D:/software/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/software/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
-CXXINCS  = -I"D:/software/Dev-Cpp/MinGW64/include" -I"D:/software/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/software/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/software/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+LIBS     = -L"E:/software/Dev-Cpp/MinGW64/lib" -L"E:/software/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"E:/software/Dev-Cpp/MinGW64/include" -I"E:/software/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/software/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"E:/software/Dev-Cpp/MinGW64/include" -I"E:/software/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/software/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"E:/software/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
 BIN      = SymbolSync.exe
 CXXFLAGS = $(CXXINCS) -std=gnu++11 -g3
 CFLAGS   = $(INCS) -std=gnu++11 -g3
