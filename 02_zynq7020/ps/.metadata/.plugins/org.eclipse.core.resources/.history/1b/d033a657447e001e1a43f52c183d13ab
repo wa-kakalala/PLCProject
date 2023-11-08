@@ -1,0 +1,20 @@
+/* ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+int main()
+{
+    init_platform();
+
+    print("\r\nHello World\n\r");
+    print("Successfully ran Hello World application\r\n");
+
+    cleanup_platform();
+    return 0;
+}
