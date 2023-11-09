@@ -32,6 +32,7 @@ u8 symbol_sync(POINT_TYPE point){
 	now_head_index_symbol = (now_head_index_symbol + 1) & 0x3ff;
 	
 	if( index_count_symbol < WIN_LEN ) return 0;
+	Pn = 0;
 	for(index = 0; index < WIN_LEN;index++){
 		now_index = (now_head_index_symbol+index) & 0x3ff;
 		Pn += R_SEQUENCE[now_index] * P_SEQUENCE[index] ; 

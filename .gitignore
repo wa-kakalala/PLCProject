@@ -1,4 +1,4 @@
-*.o
-*.win
-*.exe
-*.dev
+01_仿真代码/SymbolSync/*.o
+01_仿真代码/SymbolSync/*.win
+01_仿真代码/SymbolSync/*.exe
+01_仿真代码/SymbolSync/*.dev
