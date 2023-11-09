@@ -41,24 +41,28 @@ int main()
     }
 
     // 8±¶²ÉÑù
-    for( i= 0;i<WIN_LEN/8 -1 ;i++){
+    for( i= 0;i<127 ;i++){
 		 symbol_sync(RX_DATA[symbol_index]);
 		 symbol_index += 8;
     }
+    uint32_t start =0 ;
+    uint32_t end = 0;
 
     timer_start();
-    uint32_t start = timer_gettime();
+    start = timer_gettime();
 
 
     while( !frame_sync(RX_DATA[index_old++],RX_DATA[index_new++]) );
+    //end = timer_gettime();
+    //printf("frame sync using time: %lu us\r\n",end-start);
 
-    for(symbol_count=0;symbol_count< 128*8;symbol_count++ ){
+    for(symbol_count=0;symbol_count< 8*128;symbol_count++ ){
     	 symbol_sync(RX_DATA[symbol_index]);
     	 symbol_index += 8;
     }
 
-    uint32_t end = timer_gettime();
-    printf("using time: %lu us",end-start);
+    end = timer_gettime();
+    printf("frame + symbol sync using time: %lu us\r\n",end-start);
 
     cleanup_platform();
     return 0;

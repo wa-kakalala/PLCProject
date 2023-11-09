@@ -1,6 +1,6 @@
-12:47:29 **** Clean-only build of project zynq7020 ****
-buildplatform.bat 56690 zynq7020 clean 
-XSDB Server Channel: tcfchan#29
+16:01:53 **** Clean-only build of project zynq7020 ****
+buildplatform.bat 60941 zynq7020 clean 
+XSDB Server Channel: tcfchan#38
 Cleaning the zynq_fsbl application.
 rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
 _fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
@@ -59,11 +59,11 @@ make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s clean
 
 rm -f ps7_cortexa9_0/lib/libxil.a
 
-12:47:32 **** Clean-only build of configuration Debug for project SyncModule ****
+16:01:57 **** Clean-only build of configuration Debug for project SyncModule ****
 make clean 
 rm -rf  ./src/frame_sync.o ./src/main.o ./src/platform.o ./src/private_timer_init.o ./src/simulated_data.o ./src/symbol_sync.o  ./src/frame_sync.d ./src/main.d ./src/platform.d ./src/private_timer_init.d ./src/simulated_data.d ./src/symbol_sync.d  SyncModule.elf.size  SyncModule.elf
 ' '
-12:47:32 **** Clean-only build of configuration Debug for project SyncModule_system ****
+16:01:58 **** Clean-only build of configuration Debug for project SyncModule_system ****
 make clean 
 rm -rf ./_sds
 rm -rf package

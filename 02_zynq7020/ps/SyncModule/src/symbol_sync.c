@@ -29,23 +29,19 @@ u8 symbol_sync(POINT_TYPE point){
 		Er += point*point;	
 		R_SEQUENCE[now_head_index_symbol] = point;
 	}
-	
 	now_head_index_symbol = (now_head_index_symbol + 1) & 0x3ff;
-	
-	if( index_count_symbol < WIN_LEN / 8 ) return 0;
+	if( index_count_symbol < 128 ) return 0;
 	Pn = 0;
-	for(index_ = 0; index_ < WIN_LEN / 8 ;index_++){
+
+	for(index_ = 0; index_ < 128 ;index_++){
 		now_index = (now_head_index_symbol+index_) & 0x3ff;
-		Pn += R_SEQUENCE[now_index] * P_SEQUENCE[index_] ;
+		// Pn += R_SEQUENCE[now_index] * P_SEQUENCE[index_] ;
+		Pn += ( R_SEQUENCE[now_index] > 32733 ) ? P_SEQUENCE[index_] : - P_SEQUENCE[index_];
 	}
-	
 
-
-	symbol_judg =  (float32)(Pn*Pn)  / (Ep * Er);
+	symbol_judg =  (float32)(abs(Pn))  / Er*Ep;
 	//printf("symbol_jude:%f\r\n",symbol_judg);
 
-
-	
 	if( symbol_judg > SYMBOL_THRS ) symbol_judg_count++;
 	
 	if( symbol_judg_count >= SYMBOL_JUGE_THRS ){
@@ -54,6 +50,4 @@ u8 symbol_sync(POINT_TYPE point){
 	}else{
 		return 0;
 	}
-	
-	
 }
