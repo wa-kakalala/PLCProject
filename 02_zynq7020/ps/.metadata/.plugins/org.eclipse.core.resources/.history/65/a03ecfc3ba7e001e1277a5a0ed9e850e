@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="SyncModule_system" platform="C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/zynq7020.xpfm" platformUID="xilinx:::0.0(custom)" sysConfig="zynq7020" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.518484537">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="SyncModule" domainName="standalone_domain" domainPrettyName="standalone_domain" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="SyncModule" domainName="standalone_domain" domainPrettyName="standalone_domain" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1834764944">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="SyncModule" domainName="standalone_domain" domainPrettyName="standalone_domain" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

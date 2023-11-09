@@ -32,25 +32,33 @@ int main()
     sys_init();
 
     int i = 0;
-    u32 index_new = WIN_LEN-1;
+    u32 index_new = WIN_LEN;
     u32 index_old = 0;
-    for( i= 0;i<WIN_LEN;i++){
+    u32 symbol_index = 0;
+    u32 symbol_count = 0;
+    for( i= 0;i<WIN_LEN-1;i++){
     	 frame_sync(RX_DATA[index_old++],RX_DATA[index_new++]);
+    }
+
+    // 8±¶²ÉÑù
+    for( i= 0;i<WIN_LEN/8 -1 ;i++){
+		 symbol_sync(RX_DATA[symbol_index]);
+		 symbol_index += 8;
     }
 
     timer_start();
     uint32_t start = timer_gettime();
-    printf("%lu\r\n",start);
+
 
     while( !frame_sync(RX_DATA[index_old++],RX_DATA[index_new++]) );
 
+    for(symbol_count=0;symbol_count< 128*8;symbol_count++ ){
+    	 symbol_sync(RX_DATA[symbol_index]);
+    	 symbol_index += 8;
+    }
+
     uint32_t end = timer_gettime();
-    printf("%lu\r\n",end);
-
-
-
-
-
+    printf("using time: %lu us",end-start);
 
     cleanup_platform();
     return 0;

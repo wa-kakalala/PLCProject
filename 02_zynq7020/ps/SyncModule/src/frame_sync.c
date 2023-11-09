@@ -33,7 +33,7 @@ u8 frame_sync(POINT_TYPE point_new,POINT_TYPE point_old){
 	
 	if( index_count < WIN_LEN ) return 0;
 	
-	frame_judg = C_win_sum / P_win_sum;
+	frame_judg = ((float32)C_win_sum) / P_win_sum;
 	//printf("frame_jude:%f\r\n",frame_judg);
 	
 	if( frame_judg > FRAME_THRESH  ) frame_judg_count ++;
