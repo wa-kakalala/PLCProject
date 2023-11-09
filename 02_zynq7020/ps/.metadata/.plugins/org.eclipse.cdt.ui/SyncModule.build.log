@@ -1,7 +1,7 @@
-16:01:57 **** Clean-only build of configuration Debug for project SyncModule ****
+22:35:59 **** Clean-only build of configuration Debug for project SyncModule ****
 make clean 
 rm -rf  ./src/frame_sync.o ./src/main.o ./src/platform.o ./src/private_timer_init.o ./src/simulated_data.o ./src/symbol_sync.o  ./src/frame_sync.d ./src/main.d ./src/platform.d ./src/private_timer_init.d ./src/simulated_data.d ./src/symbol_sync.d  SyncModule.elf.size  SyncModule.elf
 ' '
 
-16:01:58 Build Finished (took 160ms)
+22:35:59 Build Finished (took 117ms)
 

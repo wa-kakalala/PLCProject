@@ -1,9 +1,10 @@
 #include "type.h"
 
+
 POINT_TYPE C_win[WIN_LEN] = {0};
 POINT_TYPE P_win[WIN_LEN] = {0};
-uint32_t C_win_sum      = 0  ;
-uint32_t P_win_sum      = 0  ;
+u32 C_win_sum      = 0  ;
+u32 P_win_sum      = 0  ;
 
 u16        index_count    = 0;
 u16        now_head_index = 0;
@@ -33,7 +34,7 @@ u8 frame_sync(POINT_TYPE point_new,POINT_TYPE point_old){
 	
 	if( index_count < WIN_LEN ) return 0;
 	
-	frame_judg = ((float32)C_win_sum) / P_win_sum;
+	frame_judg = C_win_sum / P_win_sum;
 	//printf("frame_jude:%f\r\n",frame_judg);
 	
 	if( frame_judg > FRAME_THRESH  ) frame_judg_count ++;
