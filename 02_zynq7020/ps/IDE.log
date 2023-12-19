@@ -1983,3 +1983,1066 @@ con
 22:27:00 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
 22:35:57 INFO  : Result from executing command 'removePlatformRepo': 
 22:36:06 INFO  : Disconnected from the channel tcfchan#6.
+13:48:14 DEBUG : Logs will be stored at 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/IDE.log'.
+13:48:19 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\temp_xsdb_launch_script.tcl
+13:48:25 INFO  : XSCT server has started successfully.
+13:48:25 INFO  : Successfully done setting XSCT server connection channel  
+13:48:26 INFO  : plnx-install-location is set to ''
+13:48:26 INFO  : Successfully done setting workspace for the tool. 
+13:48:28 INFO  : Registering command handlers for Vitis TCF services
+13:48:29 INFO  : Platform repository initialization has completed.
+13:48:36 INFO  : Successfully done query RDI_DATADIR 
+13:51:03 INFO  : Result from executing command 'getProjects': zynq7020
+13:51:03 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202210_1|E:/software/Vivado2022.1/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|E:/software/Vivado2022.1/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|E:/software/Vivado2022.1/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+13:51:03 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:52:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:52:02 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:52:02 INFO  : 'jtag frequency' command is executed.
+13:52:02 INFO  : Context for 'APU' is selected.
+13:52:02 INFO  : System reset is completed.
+13:52:05 INFO  : 'after 3000' command is executed.
+13:52:05 INFO  : Context for 'APU' is selected.
+13:52:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:52:05 INFO  : 'configparams force-mem-access 1' command is executed.
+13:52:05 INFO  : Context for 'APU' is selected.
+13:52:05 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:52:05 INFO  : 'ps7_init' command is executed.
+13:52:05 INFO  : 'ps7_post_config' command is executed.
+13:52:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:52:05 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:52:05 INFO  : 'configparams force-mem-access 0' command is executed.
+13:52:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:52:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:52:05 INFO  : 'con' command is executed.
+13:52:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:52:05 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:52:37 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:52:49 INFO  : Disconnected from the channel tcfchan#3.
+13:52:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:52:49 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:52:49 INFO  : 'jtag frequency' command is executed.
+13:52:49 INFO  : Context for 'APU' is selected.
+13:52:49 INFO  : System reset is completed.
+13:52:52 INFO  : 'after 3000' command is executed.
+13:52:52 INFO  : Context for 'APU' is selected.
+13:52:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:52:52 INFO  : 'configparams force-mem-access 1' command is executed.
+13:52:52 INFO  : Context for 'APU' is selected.
+13:52:52 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:52:53 INFO  : 'ps7_init' command is executed.
+13:52:53 INFO  : 'ps7_post_config' command is executed.
+13:52:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:52:53 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:52:53 INFO  : 'configparams force-mem-access 0' command is executed.
+13:52:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:52:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:52:53 INFO  : 'con' command is executed.
+13:52:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:52:53 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:53:09 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:53:18 INFO  : Disconnected from the channel tcfchan#5.
+13:53:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:53:18 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:53:18 INFO  : 'jtag frequency' command is executed.
+13:53:18 INFO  : Context for 'APU' is selected.
+13:53:18 INFO  : System reset is completed.
+13:53:21 INFO  : 'after 3000' command is executed.
+13:53:21 INFO  : Context for 'APU' is selected.
+13:53:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:53:21 INFO  : 'configparams force-mem-access 1' command is executed.
+13:53:21 INFO  : Context for 'APU' is selected.
+13:53:21 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:53:21 INFO  : 'ps7_init' command is executed.
+13:53:21 INFO  : 'ps7_post_config' command is executed.
+13:53:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:53:21 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:53:21 INFO  : 'configparams force-mem-access 0' command is executed.
+13:53:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:53:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:53:21 INFO  : 'con' command is executed.
+13:53:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:53:21 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:54:08 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:54:17 INFO  : Disconnected from the channel tcfchan#7.
+13:54:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:54:17 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:54:17 INFO  : 'jtag frequency' command is executed.
+13:54:17 INFO  : Context for 'APU' is selected.
+13:54:17 INFO  : System reset is completed.
+13:54:20 INFO  : 'after 3000' command is executed.
+13:54:20 INFO  : Context for 'APU' is selected.
+13:54:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:54:20 INFO  : 'configparams force-mem-access 1' command is executed.
+13:54:20 INFO  : Context for 'APU' is selected.
+13:54:20 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:54:20 INFO  : 'ps7_init' command is executed.
+13:54:20 INFO  : 'ps7_post_config' command is executed.
+13:54:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:54:21 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:54:21 INFO  : 'configparams force-mem-access 0' command is executed.
+13:54:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:54:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:54:21 INFO  : 'con' command is executed.
+13:54:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:54:21 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:54:30 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:54:38 INFO  : Disconnected from the channel tcfchan#9.
+13:54:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:54:39 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:54:39 INFO  : 'jtag frequency' command is executed.
+13:54:39 INFO  : Context for 'APU' is selected.
+13:54:39 INFO  : System reset is completed.
+13:54:42 INFO  : 'after 3000' command is executed.
+13:54:42 INFO  : Context for 'APU' is selected.
+13:54:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:54:42 INFO  : 'configparams force-mem-access 1' command is executed.
+13:54:42 INFO  : Context for 'APU' is selected.
+13:54:42 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:54:42 INFO  : 'ps7_init' command is executed.
+13:54:42 INFO  : 'ps7_post_config' command is executed.
+13:54:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:54:42 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:54:42 INFO  : 'configparams force-mem-access 0' command is executed.
+13:54:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:54:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:54:42 INFO  : 'con' command is executed.
+13:54:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:54:42 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:54:56 INFO  : Disconnected from the channel tcfchan#11.
+13:54:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:54:56 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:54:56 INFO  : 'jtag frequency' command is executed.
+13:54:56 INFO  : Context for 'APU' is selected.
+13:54:56 INFO  : System reset is completed.
+13:54:59 INFO  : 'after 3000' command is executed.
+13:54:59 INFO  : Context for 'APU' is selected.
+13:54:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:54:59 INFO  : 'configparams force-mem-access 1' command is executed.
+13:54:59 INFO  : Context for 'APU' is selected.
+13:54:59 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:54:59 INFO  : 'ps7_init' command is executed.
+13:54:59 INFO  : 'ps7_post_config' command is executed.
+13:54:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:54:59 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:54:59 INFO  : 'configparams force-mem-access 0' command is executed.
+13:54:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:54:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:54:59 INFO  : 'con' command is executed.
+13:54:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:54:59 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:55:16 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:55:24 INFO  : Disconnected from the channel tcfchan#12.
+13:55:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:55:24 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:55:24 INFO  : 'jtag frequency' command is executed.
+13:55:24 INFO  : Context for 'APU' is selected.
+13:55:24 INFO  : System reset is completed.
+13:55:27 INFO  : 'after 3000' command is executed.
+13:55:27 INFO  : Context for 'APU' is selected.
+13:55:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:55:27 INFO  : 'configparams force-mem-access 1' command is executed.
+13:55:27 INFO  : Context for 'APU' is selected.
+13:55:27 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:55:27 INFO  : 'ps7_init' command is executed.
+13:55:27 INFO  : 'ps7_post_config' command is executed.
+13:55:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:55:27 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:55:28 INFO  : 'configparams force-mem-access 0' command is executed.
+13:55:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:55:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:55:28 INFO  : 'con' command is executed.
+13:55:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:55:28 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:55:55 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:56:03 INFO  : Disconnected from the channel tcfchan#14.
+13:56:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:56:03 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:56:03 INFO  : 'jtag frequency' command is executed.
+13:56:03 INFO  : Context for 'APU' is selected.
+13:56:04 INFO  : System reset is completed.
+13:56:07 INFO  : 'after 3000' command is executed.
+13:56:07 INFO  : Context for 'APU' is selected.
+13:56:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:56:07 INFO  : 'configparams force-mem-access 1' command is executed.
+13:56:07 INFO  : Context for 'APU' is selected.
+13:56:07 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:56:07 INFO  : 'ps7_init' command is executed.
+13:56:07 INFO  : 'ps7_post_config' command is executed.
+13:56:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:56:07 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:56:07 INFO  : 'configparams force-mem-access 0' command is executed.
+13:56:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:56:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:56:07 INFO  : 'con' command is executed.
+13:56:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:56:07 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:56:30 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:56:38 INFO  : Disconnected from the channel tcfchan#16.
+13:56:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:56:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:56:38 INFO  : 'jtag frequency' command is executed.
+13:56:38 INFO  : Context for 'APU' is selected.
+13:56:38 INFO  : System reset is completed.
+13:56:41 INFO  : 'after 3000' command is executed.
+13:56:41 INFO  : Context for 'APU' is selected.
+13:56:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:56:41 INFO  : 'configparams force-mem-access 1' command is executed.
+13:56:41 INFO  : Context for 'APU' is selected.
+13:56:41 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:56:41 INFO  : 'ps7_init' command is executed.
+13:56:41 INFO  : 'ps7_post_config' command is executed.
+13:56:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:56:42 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:56:42 INFO  : 'configparams force-mem-access 0' command is executed.
+13:56:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:56:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:56:42 INFO  : 'con' command is executed.
+13:56:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:56:42 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:57:36 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:57:46 INFO  : Disconnected from the channel tcfchan#18.
+13:57:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:57:46 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:57:46 INFO  : 'jtag frequency' command is executed.
+13:57:46 INFO  : Context for 'APU' is selected.
+13:57:46 INFO  : System reset is completed.
+13:57:49 INFO  : 'after 3000' command is executed.
+13:57:49 INFO  : Context for 'APU' is selected.
+13:57:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:57:49 INFO  : 'configparams force-mem-access 1' command is executed.
+13:57:49 INFO  : Context for 'APU' is selected.
+13:57:49 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:57:49 INFO  : 'ps7_init' command is executed.
+13:57:49 INFO  : 'ps7_post_config' command is executed.
+13:57:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:57:49 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:57:49 INFO  : 'configparams force-mem-access 0' command is executed.
+13:57:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:57:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:57:49 INFO  : 'con' command is executed.
+13:57:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:57:49 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:58:08 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:58:17 INFO  : Disconnected from the channel tcfchan#20.
+13:58:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:58:18 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:58:18 INFO  : 'jtag frequency' command is executed.
+13:58:18 INFO  : Context for 'APU' is selected.
+13:58:18 INFO  : System reset is completed.
+13:58:21 INFO  : 'after 3000' command is executed.
+13:58:21 INFO  : Context for 'APU' is selected.
+13:58:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:58:21 INFO  : 'configparams force-mem-access 1' command is executed.
+13:58:21 INFO  : Context for 'APU' is selected.
+13:58:21 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:58:21 INFO  : 'ps7_init' command is executed.
+13:58:21 INFO  : 'ps7_post_config' command is executed.
+13:58:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:21 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:58:21 INFO  : 'configparams force-mem-access 0' command is executed.
+13:58:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:58:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:21 INFO  : 'con' command is executed.
+13:58:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:58:21 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:58:45 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:58:55 INFO  : Disconnected from the channel tcfchan#22.
+13:58:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:58:55 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:58:55 INFO  : 'jtag frequency' command is executed.
+13:58:55 INFO  : Context for 'APU' is selected.
+13:58:55 INFO  : System reset is completed.
+13:58:58 INFO  : 'after 3000' command is executed.
+13:58:58 INFO  : Context for 'APU' is selected.
+13:58:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:58:58 INFO  : 'configparams force-mem-access 1' command is executed.
+13:58:58 INFO  : Context for 'APU' is selected.
+13:58:58 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:58:58 INFO  : 'ps7_init' command is executed.
+13:58:58 INFO  : 'ps7_post_config' command is executed.
+13:58:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:59 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:58:59 INFO  : 'configparams force-mem-access 0' command is executed.
+13:58:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:58:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:59 INFO  : 'con' command is executed.
+13:58:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:58:59 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+13:59:20 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+13:59:27 INFO  : Disconnected from the channel tcfchan#24.
+13:59:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:59:28 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+13:59:28 INFO  : 'jtag frequency' command is executed.
+13:59:28 INFO  : Context for 'APU' is selected.
+13:59:28 INFO  : System reset is completed.
+13:59:31 INFO  : 'after 3000' command is executed.
+13:59:31 INFO  : Context for 'APU' is selected.
+13:59:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+13:59:31 INFO  : 'configparams force-mem-access 1' command is executed.
+13:59:31 INFO  : Context for 'APU' is selected.
+13:59:31 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+13:59:31 INFO  : 'ps7_init' command is executed.
+13:59:31 INFO  : 'ps7_post_config' command is executed.
+13:59:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:59:31 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:59:31 INFO  : 'configparams force-mem-access 0' command is executed.
+13:59:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:59:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:59:31 INFO  : 'con' command is executed.
+13:59:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:59:31 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+14:01:56 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+14:02:04 INFO  : Disconnected from the channel tcfchan#26.
+14:02:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:02:04 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:02:04 INFO  : 'jtag frequency' command is executed.
+14:02:04 INFO  : Context for 'APU' is selected.
+14:02:04 INFO  : System reset is completed.
+14:02:07 INFO  : 'after 3000' command is executed.
+14:02:07 INFO  : Context for 'APU' is selected.
+14:02:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+14:02:07 INFO  : 'configparams force-mem-access 1' command is executed.
+14:02:07 INFO  : Context for 'APU' is selected.
+14:02:07 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+14:02:08 INFO  : 'ps7_init' command is executed.
+14:02:08 INFO  : 'ps7_post_config' command is executed.
+14:02:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:08 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:02:08 INFO  : 'configparams force-mem-access 0' command is executed.
+14:02:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:02:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:08 INFO  : 'con' command is executed.
+14:02:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:02:08 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+14:02:44 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+14:02:53 INFO  : Disconnected from the channel tcfchan#28.
+14:02:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:02:54 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:02:54 INFO  : 'jtag frequency' command is executed.
+14:02:54 INFO  : Context for 'APU' is selected.
+14:02:54 INFO  : System reset is completed.
+14:02:57 INFO  : 'after 3000' command is executed.
+14:02:57 INFO  : Context for 'APU' is selected.
+14:02:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+14:02:57 INFO  : 'configparams force-mem-access 1' command is executed.
+14:02:57 INFO  : Context for 'APU' is selected.
+14:02:57 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+14:02:57 INFO  : 'ps7_init' command is executed.
+14:02:57 INFO  : 'ps7_post_config' command is executed.
+14:02:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:57 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:02:57 INFO  : 'configparams force-mem-access 0' command is executed.
+14:02:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:02:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:57 INFO  : 'con' command is executed.
+14:02:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:02:57 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+14:04:32 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+14:04:40 INFO  : Disconnected from the channel tcfchan#30.
+14:04:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:04:40 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:04:40 INFO  : 'jtag frequency' command is executed.
+14:04:40 INFO  : Context for 'APU' is selected.
+14:04:41 INFO  : System reset is completed.
+14:04:44 INFO  : 'after 3000' command is executed.
+14:04:44 INFO  : Context for 'APU' is selected.
+14:04:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+14:04:44 INFO  : 'configparams force-mem-access 1' command is executed.
+14:04:44 INFO  : Context for 'APU' is selected.
+14:04:44 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+14:04:44 INFO  : 'ps7_init' command is executed.
+14:04:44 INFO  : 'ps7_post_config' command is executed.
+14:04:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:04:44 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:04:44 INFO  : 'configparams force-mem-access 0' command is executed.
+14:04:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:04:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:04:44 INFO  : 'con' command is executed.
+14:04:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:04:44 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+14:05:13 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+14:05:24 INFO  : Disconnected from the channel tcfchan#32.
+14:05:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:05:24 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:05:24 INFO  : 'jtag frequency' command is executed.
+14:05:24 INFO  : Context for 'APU' is selected.
+14:05:24 INFO  : System reset is completed.
+14:05:27 INFO  : 'after 3000' command is executed.
+14:05:27 INFO  : Context for 'APU' is selected.
+14:05:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+14:05:27 INFO  : 'configparams force-mem-access 1' command is executed.
+14:05:27 INFO  : Context for 'APU' is selected.
+14:05:27 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+14:05:27 INFO  : 'ps7_init' command is executed.
+14:05:27 INFO  : 'ps7_post_config' command is executed.
+14:05:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:28 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:05:28 INFO  : 'configparams force-mem-access 0' command is executed.
+14:05:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:05:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:28 INFO  : 'con' command is executed.
+14:05:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:05:28 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+14:06:03 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+14:06:11 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+14:06:23 INFO  : Disconnected from the channel tcfchan#34.
+14:06:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:23 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+14:06:23 INFO  : 'jtag frequency' command is executed.
+14:06:23 INFO  : Context for 'APU' is selected.
+14:06:23 INFO  : System reset is completed.
+14:06:26 INFO  : 'after 3000' command is executed.
+14:06:26 INFO  : Context for 'APU' is selected.
+14:06:26 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+14:06:26 INFO  : 'configparams force-mem-access 1' command is executed.
+14:06:26 INFO  : Context for 'APU' is selected.
+14:06:26 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+14:06:26 INFO  : 'ps7_init' command is executed.
+14:06:26 INFO  : 'ps7_post_config' command is executed.
+14:06:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:06:27 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:06:27 INFO  : 'configparams force-mem-access 0' command is executed.
+14:06:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:06:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:06:27 INFO  : 'con' command is executed.
+14:06:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:06:27 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\systemdebugger_syncmodule_system_standalone.tcl'
+14:13:27 INFO  : Disconnected from the channel tcfchan#37.
+21:41:03 DEBUG : Logs will be stored at 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/IDE.log'.
+21:41:08 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\temp_xsdb_launch_script.tcl
+21:41:14 INFO  : XSCT server has started successfully.
+21:41:14 INFO  : Successfully done setting XSCT server connection channel  
+21:41:14 INFO  : plnx-install-location is set to ''
+21:41:14 INFO  : Successfully done setting workspace for the tool. 
+21:41:17 INFO  : Registering command handlers for Vitis TCF services
+21:41:17 INFO  : Platform repository initialization has completed.
+21:41:21 INFO  : Successfully done query RDI_DATADIR 
+21:42:34 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+21:43:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:03 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:43:03 INFO  : 'jtag frequency' command is executed.
+21:43:03 INFO  : Context for 'APU' is selected.
+21:43:03 INFO  : System reset is completed.
+21:43:06 INFO  : 'after 3000' command is executed.
+21:43:06 INFO  : Context for 'APU' is selected.
+21:43:06 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+21:43:06 INFO  : 'configparams force-mem-access 1' command is executed.
+21:43:06 INFO  : Context for 'APU' is selected.
+21:43:06 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+21:43:06 INFO  : 'ps7_init' command is executed.
+21:43:06 INFO  : 'ps7_post_config' command is executed.
+21:43:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:07 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:43:07 INFO  : 'configparams force-mem-access 0' command is executed.
+21:43:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:43:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:07 INFO  : 'con' command is executed.
+21:43:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:43:07 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\debugger_syncmodule-default.tcl'
+21:43:27 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+21:43:40 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+21:43:45 INFO  : Disconnected from the channel tcfchan#1.
+21:43:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:47 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:43:47 ERROR : port closed
+21:43:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:43:47 ERROR : port closed
+21:43:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:52 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:43:52 INFO  : 'jtag frequency' command is executed.
+21:43:52 INFO  : Context for 'APU' is selected.
+21:43:52 INFO  : System reset is completed.
+21:43:55 INFO  : 'after 3000' command is executed.
+21:43:55 INFO  : Context for 'APU' is selected.
+21:43:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+21:43:56 INFO  : 'configparams force-mem-access 1' command is executed.
+21:43:56 INFO  : Context for 'APU' is selected.
+21:43:56 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+21:43:56 INFO  : 'ps7_init' command is executed.
+21:43:56 INFO  : 'ps7_post_config' command is executed.
+21:43:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:56 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:43:56 INFO  : 'configparams force-mem-access 0' command is executed.
+21:43:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:43:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:56 INFO  : 'con' command is executed.
+21:43:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:43:56 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\debugger_syncmodule-default.tcl'
+21:44:41 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+21:44:46 INFO  : Disconnected from the channel tcfchan#2.
+21:44:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:44:48 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:44:48 INFO  : 'jtag frequency' command is executed.
+21:44:48 INFO  : Context for 'APU' is selected.
+21:44:48 INFO  : System reset is completed.
+21:44:51 INFO  : 'after 3000' command is executed.
+21:44:51 INFO  : Context for 'APU' is selected.
+21:44:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+21:44:52 INFO  : 'configparams force-mem-access 1' command is executed.
+21:44:52 INFO  : Context for 'APU' is selected.
+21:44:52 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+21:44:52 INFO  : 'ps7_init' command is executed.
+21:44:52 INFO  : 'ps7_post_config' command is executed.
+21:44:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:52 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:44:52 INFO  : 'configparams force-mem-access 0' command is executed.
+21:44:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:44:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:52 INFO  : 'con' command is executed.
+21:44:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:44:52 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\debugger_syncmodule-default.tcl'
+21:47:00 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+21:47:06 INFO  : Disconnected from the channel tcfchan#3.
+21:47:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:47:07 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:47:07 INFO  : 'jtag frequency' command is executed.
+21:47:07 INFO  : Context for 'APU' is selected.
+21:47:07 INFO  : System reset is completed.
+21:47:10 INFO  : 'after 3000' command is executed.
+21:47:10 INFO  : Context for 'APU' is selected.
+21:47:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+21:47:11 INFO  : 'configparams force-mem-access 1' command is executed.
+21:47:11 INFO  : Context for 'APU' is selected.
+21:47:11 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+21:47:11 INFO  : 'ps7_init' command is executed.
+21:47:11 INFO  : 'ps7_post_config' command is executed.
+21:47:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:47:12 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:47:12 INFO  : 'configparams force-mem-access 0' command is executed.
+21:47:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:47:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:47:12 INFO  : 'con' command is executed.
+21:47:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:47:12 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\debugger_syncmodule-default.tcl'
+21:51:39 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+21:53:34 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+21:53:46 INFO  : Checking for BSP changes to sync application flags for project 'SyncModule'...
+21:53:56 INFO  : Disconnected from the channel tcfchan#4.
+21:53:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:53:57 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:53:57 INFO  : 'jtag frequency' command is executed.
+21:53:57 INFO  : Context for 'APU' is selected.
+21:53:57 INFO  : System reset is completed.
+21:54:00 INFO  : 'after 3000' command is executed.
+21:54:00 INFO  : Context for 'APU' is selected.
+21:54:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+21:54:01 INFO  : 'configparams force-mem-access 1' command is executed.
+21:54:01 INFO  : Context for 'APU' is selected.
+21:54:01 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+21:54:01 INFO  : 'ps7_init' command is executed.
+21:54:01 INFO  : 'ps7_post_config' command is executed.
+21:54:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:01 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:54:01 INFO  : 'configparams force-mem-access 0' command is executed.
+21:54:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:54:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:01 INFO  : 'con' command is executed.
+21:54:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:54:01 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\debugger_syncmodule-default.tcl'
+21:54:15 INFO  : Disconnected from the channel tcfchan#5.
+21:54:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:54:16 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:54:16 INFO  : 'jtag frequency' command is executed.
+21:54:16 INFO  : Context for 'APU' is selected.
+21:54:16 INFO  : System reset is completed.
+21:54:19 INFO  : 'after 3000' command is executed.
+21:54:19 INFO  : Context for 'APU' is selected.
+21:54:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa'.
+21:54:20 INFO  : 'configparams force-mem-access 1' command is executed.
+21:54:20 INFO  : Context for 'APU' is selected.
+21:54:20 INFO  : Sourcing of 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl' is done.
+21:54:20 INFO  : 'ps7_init' command is executed.
+21:54:20 INFO  : 'ps7_post_config' command is executed.
+21:54:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:21 INFO  : The application 'C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:54:21 INFO  : 'configparams force-mem-access 0' command is executed.
+21:54:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/zynq7020/export/zynq7020/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/wkk/Desktop/HuaWeiProject/PLCProject/02_zynq7020/ps/SyncModule/Debug/SyncModule.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:54:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:21 INFO  : 'con' command is executed.
+21:54:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:54:21 INFO  : Launch script is exported to file 'C:\Users\wkk\Desktop\HuaWeiProject\PLCProject\02_zynq7020\ps\SyncModule_system\_ide\scripts\debugger_syncmodule-default.tcl'
+00:06:17 INFO  : Result from executing command 'removePlatformRepo': 
+00:06:24 INFO  : Disconnected from the channel tcfchan#6.

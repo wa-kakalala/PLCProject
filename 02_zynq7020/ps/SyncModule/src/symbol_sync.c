@@ -52,5 +52,4 @@ u8 symbol_sync(POINT_TYPE point){
 		return 0;
 	}
 
-
 }

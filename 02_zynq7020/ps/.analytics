@@ -142,3 +142,57 @@ timestamp=[2023-11-09 22:26:52], mode=BUILD, duration=0:00:04.329, duration_ms=4
 timestamp=[2023-11-09 22:35:59], mode=PLATFORM_GENERATION, duration=0:00:03.438, duration_ms=3438, data={name=zynq7020}
 timestamp=[2023-11-09 22:35:59], mode=BUILD, duration=0:00:00.123, duration_ms=123, data={name=SyncModule, configuration=Debug, clean_build=true}
 timestamp=[2023-11-09 22:35:59], mode=BUILD, duration=0:00:00.106, duration_ms=106, data={name=SyncModule_system, configuration=Debug, clean_build=true}
+timestamp=[2023-11-10 13:48:26], mode=WORKBENCH_START, duration=0:00:20.305, duration_ms=20305, data={}
+timestamp=[2023-11-10 13:48:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.749, duration_ms=749, data={editors_count=15, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,SyncModule,SyncModule_system,zynq7020}
+timestamp=[2023-11-10 13:48:29], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.652, duration_ms=1652, data={}
+timestamp=[2023-11-10 13:51:03], mode=PLATFORM_GENERATION, duration=0:00:13.630, duration_ms=13630, data={name=zynq7020}
+timestamp=[2023-11-10 13:51:09], mode=BUILD, duration=0:00:04.023, duration_ms=4023, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:51:14], mode=BUILD, duration=0:00:05.088, duration_ms=5088, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:52:37], mode=BUILD, duration=0:00:00.573, duration_ms=573, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:52:42], mode=BUILD, duration=0:00:04.328, duration_ms=4328, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:53:09], mode=BUILD, duration=0:00:00.537, duration_ms=537, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:53:14], mode=BUILD, duration=0:00:04.273, duration_ms=4273, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:54:08], mode=BUILD, duration=0:00:00.462, duration_ms=462, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:54:13], mode=BUILD, duration=0:00:04.148, duration_ms=4148, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:54:31], mode=BUILD, duration=0:00:00.465, duration_ms=465, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:54:35], mode=BUILD, duration=0:00:04.310, duration_ms=4310, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:55:16], mode=BUILD, duration=0:00:00.461, duration_ms=461, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:55:21], mode=BUILD, duration=0:00:04.241, duration_ms=4241, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:55:55], mode=BUILD, duration=0:00:00.461, duration_ms=461, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:56:00], mode=BUILD, duration=0:00:04.255, duration_ms=4255, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:56:30], mode=BUILD, duration=0:00:00.460, duration_ms=460, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:56:35], mode=BUILD, duration=0:00:04.226, duration_ms=4226, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:57:36], mode=BUILD, duration=0:00:00.446, duration_ms=446, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:57:41], mode=BUILD, duration=0:00:04.229, duration_ms=4229, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:58:08], mode=BUILD, duration=0:00:00.210, duration_ms=210, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:58:12], mode=BUILD, duration=0:00:04.152, duration_ms=4152, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:58:46], mode=BUILD, duration=0:00:00.470, duration_ms=470, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:58:50], mode=BUILD, duration=0:00:04.107, duration_ms=4107, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:59:20], mode=BUILD, duration=0:00:00.465, duration_ms=465, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 13:59:25], mode=BUILD, duration=0:00:04.307, duration_ms=4307, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:01:56], mode=BUILD, duration=0:00:00.464, duration_ms=464, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:02:01], mode=BUILD, duration=0:00:04.186, duration_ms=4186, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:02:45], mode=BUILD, duration=0:00:00.479, duration_ms=479, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:02:49], mode=BUILD, duration=0:00:04.195, duration_ms=4195, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:04:32], mode=BUILD, duration=0:00:00.520, duration_ms=520, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:04:37], mode=BUILD, duration=0:00:04.167, duration_ms=4167, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:05:14], mode=BUILD, duration=0:00:00.460, duration_ms=460, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:05:18], mode=BUILD, duration=0:00:04.244, duration_ms=4244, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:06:03], mode=BUILD, duration=0:00:00.449, duration_ms=449, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:06:08], mode=BUILD, duration=0:00:04.259, duration_ms=4259, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:06:12], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-10 14:06:16], mode=BUILD, duration=0:00:04.153, duration_ms=4153, data={name=SyncModule_system, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 21:41:14], mode=WORKBENCH_START, duration=0:00:17.680, duration_ms=17680, data={}
+timestamp=[2023-11-28 21:41:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.993, duration_ms=993, data={editors_count=15, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,SyncModule,SyncModule_system,zynq7020}
+timestamp=[2023-11-28 21:41:17], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.322, duration_ms=1322, data={}
+timestamp=[2023-11-28 21:42:38], mode=BUILD, duration=0:00:00.774, duration_ms=774, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 21:43:29], mode=BUILD, duration=0:00:02.440, duration_ms=2440, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 21:43:41], mode=BUILD, duration=0:00:00.508, duration_ms=508, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 21:44:42], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 21:47:01], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 21:51:40], mode=BUILD, duration=0:00:00.750, duration_ms=750, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 21:53:35], mode=BUILD, duration=0:00:00.603, duration_ms=603, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-28 21:53:46], mode=BUILD, duration=0:00:00.490, duration_ms=490, data={name=SyncModule, configuration=Debug, clean_build=false}
+timestamp=[2023-11-29 00:06:19], mode=PLATFORM_GENERATION, duration=0:00:05.691, duration_ms=5691, data={name=zynq7020}
+timestamp=[2023-11-29 00:06:20], mode=BUILD, duration=0:00:00.156, duration_ms=156, data={name=SyncModule, configuration=Debug, clean_build=true}
+timestamp=[2023-11-29 00:06:20], mode=BUILD, duration=0:00:00.111, duration_ms=111, data={name=SyncModule_system, configuration=Debug, clean_build=true}

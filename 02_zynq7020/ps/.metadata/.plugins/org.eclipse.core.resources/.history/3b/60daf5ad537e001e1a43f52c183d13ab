@@ -1,6 +1,0 @@
-#ifndef _SIMULATED_DATA_H
-#define _SIMULATED_DATA_H
-
-extern POINT_TYPE P_SEQUENCE[WIN_LEN];
-
-#endif

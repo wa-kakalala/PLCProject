@@ -1,6 +1,7 @@
-2023-11-09T22:35:56.070863300255-22:35:56 **** Clean-only build of project zynq7020 ****
-000-buildplatform.bat 49242 zynq7020 clean 
+2023-11-29T00:06:14.271626700255-00:06:14 **** Clean-only build of project zynq7020 ****
+000-buildplatform.bat 58743 zynq7020 clean 
 000-XSDB Server Channel: tcfchan#7
+000-Reading the platform  : "zynq7020"
 000-Cleaning the zynq_fsbl application.
 000-rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
 000-_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
@@ -60,5 +61,5 @@
 000-rm -f ps7_cortexa9_0/lib/libxil.a
 000-
 00255-
-22:35:59 Build Finished (took 3s.365ms)
+00:06:19 Build Finished (took 5s.597ms)
 
